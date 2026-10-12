@@ -1,0 +1,9 @@
+/* Light theme overrides (dark is the default and is unchanged) */
+:root[data-theme=light]{--surface-2:#f8f9fb;--accent:#5b56c2;--accent-hover:#4a45a8;--accent-soft:rgba(91,86,194,.14);color-scheme:light}
+:root[data-theme=light] .header__title{background:linear-gradient(180deg,#2a303b 40%,#4a5160);-webkit-background-clip:text;background-clip:text}
+:root[data-theme=light] .card{background:linear-gradient(180deg,#f8f9fb,#f1f3f6)}
+:root[data-theme=light] .preview{background:#f8f9fb}
+:root[data-theme=light] .preview--empty{background:rgba(42,48,59,.02)}
+:root[data-theme=light] .input::placeholder{color:#6b7280}
+:root[data-theme=light] .btn--primary{color:#f3f5f8;box-shadow:0 0 0 1px rgba(42,48,59,.2),0 10px 26px -14px rgba(91,86,194,.6)}
+:root[data-theme=light] .btn--primary:hover:not(:disabled){background:#1f242d;box-shadow:0 0 0 1px #1f242d,0 14px 34px -14px rgba(192,58,118,.45)}
