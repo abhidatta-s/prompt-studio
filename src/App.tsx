@@ -1,4 +1,5 @@
 import { Header, PasswordGate, PresetsPanel, PromptForm, PromptPreview } from './components'
+import DemoBar from './components/DemoBar'
 import { usePresets } from './hooks/usePresets'
 import { usePromptBuilder } from './hooks/usePromptBuilder'
 
@@ -7,9 +8,11 @@ function Studio() {
   const { presets, savePreset, deletePreset } = usePresets()
 
   return (
+    <>
+    <DemoBar name="Prompt Studio" />
     <div className="app">
       <Header onExample={loadExample} onReset={reset} />
-      <main className="layout">
+      <main className="layout" id="main">
         <div className="layout__col">
           <PromptForm state={state} onValue={setValue} onToggle={setEnabled} />
         </div>
@@ -26,6 +29,7 @@ function Studio() {
       </main>
       <footer className="footer">Prompt Studio · a demo project · your data stays in your browser</footer>
     </div>
+    </>
   )
 }
 
