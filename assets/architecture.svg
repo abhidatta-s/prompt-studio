@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-label="Prompt Studio architecture: an optional client-side gate, a six-section form, builder state with autosave, a pure buildPrompt function, live preview with counts, copy and named presets.">
+<title>Prompt Studio architecture: an optional client-side gate, a six-section form, builder state with autosave, a pure buildPrompt function, live preview with counts, copy and named presets.</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#a5b4fc"/></marker></defs>
+<rect width="960" height="470" rx="16" fill="#151722"/>
+<text x="32" y="44" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#e6e8f0" text-anchor="start">Prompt Studio</text>
+<text x="32" y="68" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#a3acc2" text-anchor="start">Structured sections in, one assembled prompt out. Runs fully in the browser and makes no model calls.</text>
+<rect x="24" y="84" width="912" height="362" rx="12" fill="none" stroke="#3a3f5c" stroke-dasharray="4 4"/>
+<text x="38" y="104" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#7c869f" text-anchor="start">BROWSER  (REACT 18 + VITE + TYPESCRIPT)</text>
+<rect x="48" y="118" width="232" height="100" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="64" y="144" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">Password gate  (optional)</text>
+<text x="64" y="164" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">on only if VITE_DEMO_PASSWORD</text>
+<text x="64" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">is set at build time</text>
+<text x="64" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">client side, not real security</text>
+<rect x="48" y="250" width="232" height="118" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="64" y="276" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">Prompt form</text>
+<text x="64" y="296" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">Role, Task, Context,</text>
+<text x="64" y="314" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">Constraints, Tone, Output format</text>
+<text x="64" y="332" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">each with an on or off toggle</text>
+<text x="64" y="350" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">example prompt loader</text>
+<rect x="340" y="232" width="260" height="96" rx="10" fill="#23273b" stroke="#6366f1" stroke-width="1.5"/>
+<rect x="340" y="242" width="3" height="76" rx="1.5" fill="#a5b4fc"/>
+<text x="356" y="258" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#a5b4fc" text-anchor="start">usePromptBuilder</text>
+<text x="356" y="278" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">holds section values and toggles</text>
+<text x="356" y="296" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">draft autosaved to localStorage</text>
+<rect x="340" y="118" width="260" height="96" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="356" y="144" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">buildPrompt.ts</text>
+<text x="356" y="164" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">skips empty or disabled sections</text>
+<text x="356" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">constraints become bullets</text>
+<text x="356" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">## heading per section</text>
+<rect x="660" y="118" width="252" height="96" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="676" y="144" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">Live preview</text>
+<text x="676" y="164" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">assembled prompt</text>
+<text x="676" y="182" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">words, characters, and</text>
+<text x="676" y="200" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">tokens estimated as chars / 4</text>
+<rect x="660" y="232" width="252" height="72" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="676" y="258" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">Copy</text>
+<text x="676" y="278" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">clipboard with fallback</text>
+<rect x="660" y="318" width="252" height="96" rx="10" fill="#1e2132" stroke="#3a3f5c" stroke-width="1"/>
+<text x="676" y="344" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#e6e8f0" text-anchor="start">Presets</text>
+<text x="676" y="364" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">save, load, delete by name</text>
+<text x="676" y="382" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#a3acc2" text-anchor="start">stored in localStorage</text>
+<path d="M164 218 L164 250" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="198" y="238" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#a3acc2" text-anchor="middle">unlock</text>
+<path d="M280 296 L340 296" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M470 232 L470 214" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M600 166 L660 166" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M600 262 L630 262 L630 268 L660 268" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M600 300 L630 300 L630 366 L660 366" fill="none" stroke="#a5b4fc" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M660 390 L620 390 L620 318 L600 318" fill="none" stroke="#a5b4fc" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+</svg>
